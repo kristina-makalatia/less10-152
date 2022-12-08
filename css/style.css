@@ -1,0 +1,189 @@
+/* responive block */
+.block {
+    width: 250px;
+    height: 250px;
+}
+.wraper-block {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* pseudo classes */
+.block:nth-child(1) {
+    background-color: yellow;
+}
+.block:nth-child(2) {
+    background-color: aquamarine;
+}
+.block:nth-child(3) {
+    background-color: blueviolet;
+}
+.block:last-child {
+    background-color: burlywood;
+}
+/* .block:nth-child(even) {
+    background-color: blue;
+}
+.block:nth-child(odd) {
+    background-color: red;
+} */
+.block:nth-child(2) .block-title {
+    color: #fff;
+}
+.block:nth-child(4) .block-title {
+    color: red;
+}
+
+
+/* image block */
+.image-wraper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.image-block {
+    width:200px;
+}
+.image {
+    width: 100%;
+}
+
+
+
+/* მიმართვა */
+/* .image-block p {
+    color:red;
+}
+.image-block.blue {
+    background-color: blue;
+} */
+
+.container {
+    max-width:1170px;
+    width:80%;
+    height: 400px;
+    background-color:chocolate;
+    margin: 0 auto;
+}
+
+
+/* section#1 styles */
+.container-wraper {
+    display: flex;
+    justify-content: space-between;
+    max-width:1170px;
+    width:80%;
+    margin: 0 auto;
+    background-color: yellow;
+}
+.left-wraper {
+    max-width: 500px;
+    width:100%;
+    background-color: blueviolet;
+}
+.right-wraper {
+    background-image: url(../images/undraw_pair_programming_njlp.png);
+    max-width: 500px;
+    width:100%;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: grey;
+}
+.image-block-wraper {
+    width:100%;
+}
+.wave-block {
+    background-color: #3D37F1;
+    width: 263px;
+    height: 77px;
+    border-radius: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* height problme responsive */
+.block-wraper-div {
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+    background-color: grey;
+    flex-wrap: wrap;
+}
+.block01 {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
+
+
+/* icons - fontawesome */
+.fa-facebook {
+    color:blue;
+    font-size: 32px;
+    transition: all 5s;
+}
+.yout-icon {
+    color:red;
+    font-size: 32px;
+    margin-left: 50px;
+}
+.fa-facebook:hover {
+    color:red;
+}
+.yout-icon:hover {
+    color:blue;
+}
+
+
+/* header styles */
+.header-wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
+    padding: 30px 0;
+    max-width: 1170px;
+    width: 80%;
+    margin:0 auto;
+}
+.ul-navigation {
+    display: flex;
+    /* justify-content: space-between; */
+}
+/* .navigation {
+    max-width: 250px;
+    width:100%;
+} */
+.burger-bar {
+    display: none;
+}
+.burger-bar:hover {
+    color: red;
+}
+.nav-li:not(.active) {
+    margin-right:30px;
+}
+/* .nav-li:last-child {
+    margin-right: 0;
+} */
+
+
+
+/* bg image */ 
+.bg-image {
+    background-image: url('../images/photographer.jpg');
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-bg {
+    background-image: url('https://media.istockphoto.com/id/1322277517/photo/wild-grass-in-the-mountains-at-sunset.jpg?s=612x612&w=0&k=20&c=6mItwwFFGqKNKEAzv0mv6TaxhLN3zSE43bWmFN--J5w=');
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+}
