@@ -187,3 +187,72 @@
     height: 600px;
     background-size: cover;
 }
+
+
+/* grid layout styles */
+.grid-block {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    /* grid-template-rows: 200px 350px; */
+    /* grid-column-gap: 30px;
+    grid-row-gap: 50px; */
+    gap: 50px 30px;
+}
+.grid-item {
+    background-color: yellow;
+    height: 250px;
+}
+
+/* fr */
+/* grid-template-columns: 1fr 1fr 1fr; */
+/* 1fr + 1fr +1fr = 3fr
+1fr = 1 / 3 * 100% = 33.33%; */
+
+/* grid-template-columns: 1fr 1fr 2fr;
+grid-template-columns: 25% 25% 50%;
+1fr = 1 / 4 * 100% = 25%
+2fr = 2 / 4 * 100% = 50%; */
+
+
+/* responsive */
+/* @media (max-width:1024px) {
+    .grid-block {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 200px 350px 200px;
+    }
+}
+
+@media (max-width:480px) {
+    .grid-block {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(6,200px);
+    }
+} */
+
+
+/* css units */
+/* .hello1 {
+    font-size: 1em; */
+    /* 1em = 16px */
+/* }
+.hello2 {
+    font-size: 1.5em; */
+    /* 1.5 * 16 = 24px; */
+/* } */
+/* .hello3 {
+    font-size: 1.5em; */
+    /* 1.5 * 24 = 36px */
+/* } */
+
+.hello1 {
+    font-size: 1rem;
+    /* 1rem = 16px */
+}
+.hello2 {
+    font-size: 1.5rem;
+    /* 1.5 * 16 = 24px; */
+}
+.hello3 {
+    font-size: 1.5rem;
+    /* 1.5 * 16 = 24px */
+}
